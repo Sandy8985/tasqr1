@@ -40,8 +40,11 @@ class MyApp extends StatelessWidget {
                 Column(
                   children: [
                     Text('Christy Brown'),
-                    Icon(Icons.arrow_downward_sharp),
-                    Icon(Icons.arrow_back_ios_new)
+                    Row(children: [
+
+                      Transform.rotate(angle: 45, child: Icon(Icons.arrow_downward),),
+                      Transform.rotate(angle: 45, child: Icon(Icons.arrow_upward),)
+                    ],)
                   ],
                 )
               ],
