@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 import 'page_5.dart';
+
 void main() => runApp(Abcd());
 
 class Abcd extends StatelessWidget {
-  const Abcd({Key? key}) : super(key: key);
+   Abcd({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyApp(),);
+      home: MyApp(),
+    );
   }
 }
-
 
 class MyApp extends StatefulWidget {
   @override
@@ -23,7 +24,9 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: Color.fromRGBO(27, 35, 53, 1.0),
+
+      resizeToAvoidBottomInset: false,
+      backgroundColor: Color.fromRGBO(27, 35, 53, 1.0),
       appBar: AppBar(
         backgroundColor: Color.fromRGBO(27, 35, 53, 1),
         leading: IconButton(
@@ -41,7 +44,6 @@ class _MyAppState extends State<MyApp> {
             hintText: 'Add your Team here',
             hintStyle: TextStyle(color: Colors.white),
             border: OutlineInputBorder(),
-
           ),
         ),
         actions: [
@@ -55,6 +57,7 @@ class _MyAppState extends State<MyApp> {
         ],
       ),
       body: Padding(
+
         padding: EdgeInsets.fromLTRB(20, 30, 0, 0),
         child: Column(
           children: [
@@ -72,20 +75,20 @@ class _MyAppState extends State<MyApp> {
                       children: [
                         Padding(
                           padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
-                          child: Text('Christy Brown'),
+                          child: Text('Christy Brown',style: TextStyle(color: Color.fromRGBO(208, 214, 229, 1)),),
                         ),
                         Row(
                           children: [
                             Transform.rotate(
                               angle: 45,
-                              child: Icon(Icons.arrow_downward),
+                              child: Icon(Icons.arrow_downward,color: Color.fromRGBO(221, 92, 92, 1),),
                             ),
                             Container(
                               margin: EdgeInsets.fromLTRB(0, 0, 50, 0),
                             ),
                             Transform.rotate(
                               angle: 45,
-                              child: Icon(Icons.arrow_upward),
+                              child: Icon(Icons.arrow_upward,color: Color.fromRGBO(67, 213, 173, 1),),
                             ),
                           ],
                         )
@@ -109,20 +112,20 @@ class _MyAppState extends State<MyApp> {
                       children: [
                         Padding(
                           padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
-                          child: Text('Christy Brown'),
+                          child: Text('Christy Brown',style: TextStyle(color: Color.fromRGBO(208, 214, 229, 1)),),
                         ),
                         Row(
                           children: [
                             Transform.rotate(
                               angle: 45,
-                              child: Icon(Icons.arrow_downward),
+                              child: Icon(Icons.arrow_downward,color: Color.fromRGBO(221, 92, 92, 1),),
                             ),
                             Container(
                               margin: EdgeInsets.fromLTRB(0, 0, 50, 0),
                             ),
                             Transform.rotate(
                               angle: 45,
-                              child: Icon(Icons.arrow_upward),
+                              child: Icon(Icons.arrow_upward,color: Color.fromRGBO(67, 213, 173, 1),),
                             ),
                           ],
                         )
@@ -146,20 +149,20 @@ class _MyAppState extends State<MyApp> {
                       children: [
                         Padding(
                           padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
-                          child: Text('Christy Brown'),
+                          child: Text('Christy Brown',style: TextStyle(color: Color.fromRGBO(208, 214, 229, 1)),),
                         ),
                         Row(
                           children: [
                             Transform.rotate(
                               angle: 45,
-                              child: Icon(Icons.arrow_downward),
+                              child: Icon(Icons.arrow_downward,color: Color.fromRGBO(221, 92, 92, 1),),
                             ),
                             Container(
                               margin: EdgeInsets.fromLTRB(0, 0, 50, 0),
                             ),
                             Transform.rotate(
                               angle: 45,
-                              child: Icon(Icons.arrow_upward),
+                              child: Icon(Icons.arrow_upward,color: Color.fromRGBO(67, 213, 173, 1),),
                             ),
                           ],
                         )
@@ -183,20 +186,20 @@ class _MyAppState extends State<MyApp> {
                       children: [
                         Padding(
                           padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
-                          child: Text('Christy Brown'),
+                          child: Text('Christy Brown',style: TextStyle(color: Color.fromRGBO(208, 214, 229, 1)),),
                         ),
                         Row(
                           children: [
                             Transform.rotate(
                               angle: 45,
-                              child: Icon(Icons.arrow_downward),
+                              child: Icon(Icons.arrow_downward,color: Color.fromRGBO(221, 92, 92, 1),),
                             ),
                             Container(
                               margin: EdgeInsets.fromLTRB(0, 0, 50, 0),
                             ),
                             Transform.rotate(
                               angle: 45,
-                              child: Icon(Icons.arrow_upward),
+                              child: Icon(Icons.arrow_upward,color: Color.fromRGBO(67, 213, 173, 1),),
                             ),
                           ],
                         )
@@ -220,20 +223,20 @@ class _MyAppState extends State<MyApp> {
                       children: [
                         Padding(
                           padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
-                          child: Text('Christy Brown'),
+                          child: Text('Christy Brown',style: TextStyle(color: Color.fromRGBO(208, 214, 229, 1)),),
                         ),
                         Row(
                           children: [
                             Transform.rotate(
                               angle: 45,
-                              child: Icon(Icons.arrow_downward),
+                              child: Icon(Icons.arrow_downward,color: Color.fromRGBO(221, 92, 92, 1),),
                             ),
                             Container(
                               margin: EdgeInsets.fromLTRB(0, 0, 50, 0),
                             ),
                             Transform.rotate(
                               angle: 45,
-                              child: Icon(Icons.arrow_upward),
+                              child: Icon(Icons.arrow_upward,color: Color.fromRGBO(67, 213, 173, 1),),
                             ),
                           ],
                         )
@@ -257,20 +260,20 @@ class _MyAppState extends State<MyApp> {
                       children: [
                         Padding(
                           padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
-                          child: Text('Christy Brown'),
+                          child: Text('Christy Brown',style: TextStyle(color: Color.fromRGBO(208, 214, 229, 1)),),
                         ),
                         Row(
                           children: [
                             Transform.rotate(
                               angle: 45,
-                              child: Icon(Icons.arrow_downward),
+                              child: Icon(Icons.arrow_downward,color: Color.fromRGBO(221, 92, 92, 1),),
                             ),
                             Container(
                               margin: EdgeInsets.fromLTRB(0, 0, 50, 0),
                             ),
                             Transform.rotate(
                               angle: 45,
-                              child: Icon(Icons.arrow_upward),
+                              child: Icon(Icons.arrow_upward,color: Color.fromRGBO(67, 213, 173, 1),),
                             ),
                           ],
                         )
