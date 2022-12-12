@@ -66,7 +66,8 @@ class _MyAppState extends State<MyApp> {
               child: Row(
                 children: [
                   CircleAvatar(
-                    backgroundColor: Colors.amber,
+                    // backgroundColor: Colors.amber,
+                    backgroundImage: AssetImage('images/alex.jpg'),
                     radius: 30,
                   ),
                   Padding(
