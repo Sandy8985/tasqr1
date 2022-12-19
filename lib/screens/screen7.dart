@@ -8,6 +8,7 @@ class TimerPickerApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CupertinoApp(
+      debugShowCheckedModeBanner: false,
       theme: CupertinoThemeData(brightness: Brightness.light),
       home: TimerPickerExample(),
     );
@@ -49,7 +50,9 @@ class _TimerPickerExampleState extends State<TimerPickerExample> {
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
       navigationBar: CupertinoNavigationBar(
+          leading: CupertinoNavigationBarBackButton(onPressed: (){Navigator.pop(context);},),
         middle: Text('CupertinoTimerPicker Sample'),
+
       ),
       child: DefaultTextStyle(
         style: TextStyle(
@@ -125,3 +128,4 @@ class _TimerPickerItem extends StatelessWidget {
     );
   }
 }
+
